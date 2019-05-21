@@ -10,15 +10,15 @@ public class Game extends Canvas implements Runnable
 	public Game() {
 		 new Window(WIDTH, HEIGHT, "First Game (Version 1.0)", this);
 	}
-	
+
 	public synchronized void start() {
-		
+
 	}
-	
+
 	public void run() {
-		
+
 	}
-	
+
 	public static void main(String[] args) {
 		new Game();
 	}
