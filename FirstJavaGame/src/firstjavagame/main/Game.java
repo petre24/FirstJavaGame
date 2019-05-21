@@ -22,13 +22,17 @@ public class Game extends Canvas implements Runnable
 		running = true;
 	}
 
-	public void run() {
+	public synchronized void stop() {
 		try {
 			thread.join();  // kills the thread
 			running = false;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void run() {
+		
 	}
 
 	public static void main(String[] args) {
